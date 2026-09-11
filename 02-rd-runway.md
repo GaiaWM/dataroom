@@ -61,9 +61,15 @@ paid layer becomes visibly *more* than the OSS sum-of-parts.
 - **Enterprise shape.** On-prem deployment of the full engine, SLAs, per-NPC/per-player
   usage metering and billing infrastructure.
 - **Beyond games.** The avatars deployment (historical figures over Open History Map data)
-  is the template: the same engine serving heritage, education, and simulation customers
-  whose "world" is a real place with a real timeline. We follow demand here rather than
-  lead with it, but the lineage (§[04](04-mission.md)) makes it a short step.
+  is the template: the same engine serving customers whose "world" is a real place with a
+  real timeline. Two named directions, detailed in [04](04-mission.md): **emergency
+  simulation on real geography** (civil-protection scenario rehearsal with embodied
+  populations — locally-perceiving agents, rumour dynamics, cascading consequence — sold
+  through the enterprise tier) and **"analysis of the absence"** (an academic branch: where
+  a historical phenomenon is visible but its context is unexplored, search simulated
+  contexts for those consistent with the record — grant- and collaboration-funded). Either
+  pulls forward from this horizon the moment a partner or grant lands; we follow demand
+  here rather than lead with it.
 
 ## Research runway (continuous)
 

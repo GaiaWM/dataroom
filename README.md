@@ -20,6 +20,10 @@ world — its laws, its affordances, its history, its consequences — is the on
 | [03 · Business model](03-business-model.md) | Who pays, for what, and why the open-source layer strengthens rather than cannibalises the paid one. |
 | [04 · Mission & context](04-mission.md) | Why we are doing this, where we come from, the research behind it, and everything you can verify today. |
 
+This room is the diligence companion to the **[pitch deck](https://gaiawm.github.io/pitch-deck/)**
+([source](https://github.com/GaiaWM/pitch-deck)): the deck is the story, this room is the
+evidence and the plans behind it.
+
 ## How to read this room
 
 Everything in [01](01-core-technology.md) is **running code**, most of it public. We prefer

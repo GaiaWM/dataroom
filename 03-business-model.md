@@ -43,6 +43,14 @@ those get the free tier as goodwill and funnel, not as strategy.
 Numbers stay in the BD conversation by design; the *shape* is public so the conversation
 starts honest.
 
+Two adjacent verticals hang off this structure without changing it
+(detail in [04](04-mission.md)): **emergency simulation on real geography** — scenario
+rehearsal for civil-protection agencies, municipalities and insurers — enters through the
+enterprise tier with real-world geodata instead of a fictional world; and the
+**academic branch** ("analysis of the absence" in historical research) is deliberately not
+a revenue line — it is grant-funded, buys credibility and method citations, and grows the
+calibration dataset that compounds the moat.
+
 **We do not monetise inference — ever.** Agents run on the customer's model keys (BYOK).
 This removes the "lock-in to your inference provider" objection that triggers
 rebuild-it-ourselves decisions, keeps our margin structure clean of token-price exposure,

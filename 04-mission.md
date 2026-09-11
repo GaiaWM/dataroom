@@ -68,11 +68,64 @@ streaming every organ call and LLM exchange live onto a real map, and owner-run 
 connecting through ghostkit and GhostDeck from outside our infrastructure. It has produced
 over 10,000 calibration records. It is not a demo reel; it is where we live.
 
+## Applications beyond games
+
+Games are the proving ground, not the perimeter. The engine's primitives — real geography,
+temporal state, embodied populations, propagated consequence, measured behaviour — carry
+directly into two directions we are actively developing:
+
+### Emergency simulation on real geography
+
+Civil-protection scenarios — floods, evacuations, infrastructure failure, mass events —
+simulated on the real world's geometry with populations of embodied agents. The stack is
+unusually honest about how people actually behave in a crisis, because its constraints are
+the point rather than patches:
+
+- Agents are **position-blind and perceive locally** — no god's-eye view, exactly like a
+  person in smoke, floodwater, or an unfamiliar neighbourhood.
+- **Stress and energy are metabolic**, memory decays, and information travels agent-to-agent
+  through the comms organ — so rumour and misinformation dynamics are first-class phenomena,
+  not an afterthought.
+- The **influence/ripple engine** propagates cascading consequences (a bridge closes, a
+  shelter fills, a rumour spreads) through world state.
+- The **calibration organ** measures the gap between predicted and actual outcomes — the
+  precise quantity emergency planning worries about, for the simulated responders and for
+  the plan itself.
+
+Operationally this is the enterprise tier of the [business model](03-business-model.md):
+scenario rehearsal and communication-strategy testing for civil-protection agencies,
+municipalities, insurers and resilience planners, on their own geography.
+
+### Analysis of the absence — the academic branch
+
+Historical research is full of situations where **the phenomenon is visible but the context
+is not completely explored**: the record shows an outcome — a settlement abandoned, a trade
+route gone quiet, a practice that spread or failed to — while the everyday context that
+produced it left few or no sources.
+
+The engine turns that absence into a testable target. Rebuild the period world from
+[Open History Map](https://www.openhistorymap.org) data (geometry plus timeline), populate
+it with embodied agents under period-plausible constraints — skills, affordances, energy
+costs, travel and communication ranges — and search the space of candidate contexts for
+those whose simulated dynamics actually reproduce the visible phenomenon. Simulation as an
+abductive instrument: not "what happened", but "which contexts are even consistent with
+what we can see".
+
+The calibration organ is what separates this from storytelling — every run is measured,
+comparable, and repeatable, which is the methodological bar academic use demands. We run
+this as a deliberately **academic branch** of the platform: university collaborations,
+grant-funded projects and publications, valued in credibility, method citations and
+calibration data rather than licence revenue.
+
 ## Team
 
 - **Marco Montanari** ([@sirmmo](https://github.com/sirmmo)) — founder and architect.
   Geospatial engineer; author of Open History Map and Open Fantasy Maps; a decade of
   open-infrastructure work across GIS, real-time systems, and tabletop/games tooling.
+- **Lorenzo Gigli** ([@hyperloris](https://github.com/hyperloris)) — co-founder and
+  architect. PhD; specialised in blockchain and AI learning models.
+- **Matteo Sipione** ([@sipioteo](https://github.com/sipioteo)) — co-founder and
+  architect. Specialised in narrative generative-AI models.
 - A dedicated **business development lead** runs the studio pipeline (segmentation,
   qualification, partnerships), keeping the engineering/BD seam described in
   [03](03-business-model.md).
@@ -83,7 +136,7 @@ over 10,000 calibration records. It is not a demo reel; it is where we live.
 
 | Material | Link |
 |---|---|
-| Pitch deck | [github.com/GaiaWM/pitch-deck](https://github.com/GaiaWM/pitch-deck) |
+| Pitch deck (live) | [gaiawm.github.io/pitch-deck](https://gaiawm.github.io/pitch-deck/) · [source](https://github.com/GaiaWM/pitch-deck) |
 | The Ghost in the Shell — talk | [github.com/GaiaWM/260707](https://github.com/GaiaWM/260707) |
 | Organisation page | [gaiawm.github.io](https://gaiawm.github.io) |
 | ghostkit — own a ghost | [github.com/GaiaWM/ghostkit](https://github.com/GaiaWM/ghostkit) |
