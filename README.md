@@ -17,7 +17,7 @@ world — its laws, its affordances, its history, its consequences — is the on
 |---|---|
 | [01 · Core technology](01-core-technology.md) | What we have built — the engine, the embodied agent runtime, the calibration surface, the real-time fabric, the ownership layer. All of it running code. |
 | [02 · R&D runway](02-rd-runway.md) | What we build over the next 1–2 years (Q4 2026 → 2028), in three horizons, with the shipping cadence that makes the dates credible. |
-| [03 · Business model](03-business-model.md) | Who pays, for what, and why the open-source layer strengthens rather than cannibalises the paid one. |
+| [03 · Business model](03-business-model.md) | One engine, three markets — games, urban digital twins, defence & disaster resilience: who pays in each, the commercial shapes, the dual-use guardrails, and why the open-source layer strengthens rather than cannibalises the paid one. |
 | [04 · Mission & context](04-mission.md) | Why we are doing this, where we come from, the research behind it, and everything you can verify today. |
 
 This room is the diligence companion to the **[pitch deck](https://gaiawm.github.io/pitch-deck/)**

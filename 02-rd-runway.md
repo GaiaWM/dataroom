@@ -62,14 +62,18 @@ paid layer becomes visibly *more* than the OSS sum-of-parts.
   usage metering and billing infrastructure.
 - **Beyond games.** The avatars deployment (historical figures over Open History Map data)
   is the template: the same engine serving customers whose "world" is a real place with a
-  real timeline. Two named directions, detailed in [04](04-mission.md): **emergency
-  simulation on real geography** (civil-protection scenario rehearsal with embodied
-  populations — locally-perceiving agents, rumour dynamics, cascading consequence — sold
-  through the enterprise tier) and **"analysis of the absence"** (an academic branch: where
-  a historical phenomenon is visible but its context is unexplored, search simulated
-  contexts for those consistent with the record — grant- and collaboration-funded). Either
-  pulls forward from this horizon the moment a partner or grant lands; we follow demand
-  here rather than lead with it.
+  real timeline. Three named directions, detailed in [04](04-mission.md) and given their
+  commercial shapes in [03](03-business-model.md): **urban digital twins** (the
+  SMARTGREENS methodology implemented — city open data ingested as ground truth, synthetic
+  populations, per-rule calibration against real sensors, forked counterfactuals; the
+  Bologna pilot already runs), **defence & disaster resilience** (scenario rehearsal with
+  embodied populations — locally-perceiving agents, rumour dynamics, cascading
+  consequence — plus per-principal views, injects-as-changesets, and courses of action as
+  seeded forks), and **"analysis of the absence"** (an academic branch: where a historical
+  phenomenon is visible but its context is unexplored, search simulated contexts for those
+  consistent with the record — grant- and collaboration-funded, deliberately not a revenue
+  line). Any of these pulls forward from this horizon the moment a partner or grant
+  lands; we follow demand here rather than lead with it.
 
 ## Research runway (continuous)
 

@@ -72,14 +72,34 @@ over 10,000 calibration records. It is not a demo reel; it is where we live.
 
 Games are the proving ground, not the perimeter. The engine's primitives — real geography,
 temporal state, embodied populations, propagated consequence, measured behaviour — carry
-directly into two directions we are actively developing:
+directly into three directions we are actively developing. The first two are now markets
+in their own right in the [business model](03-business-model.md); the third is
+deliberately not.
 
-### Emergency simulation on real geography
+### Urban digital twins
+
+The methodology predates the engine: our SMARTGREENS 2025 paper (Montanari & Costagliola)
+defines a GlassBox-style simulation model — units carrying metrics, agents moving between
+them, map-level dynamics, rules written in a small declarative language — for city-scale
+digital twins. The engine is that paper implemented: the same rules language now drives
+the live simulation, and the paper's own listings run as its conformance tests.
+
+The pilot is running: the engine ingests **Bologna's municipal traffic-sensor open data**
+as observed ground truth, simulates synthetic commuters on the same street geometry, and
+scores the simulation against the sensors *per rule*. The first calibration run reported
+that the behavioural model "has no morning rush" — a measured, quantitative statement of
+exactly where the twin diverges from the city. That sentence is the product: a twin that
+can locate its own wrongness can carry a policy question; a twin that cannot is a
+rendering. Counterfactuals come from the same machinery that runs game worlds — fork the
+city copy-on-write, inject the intervention, run forward seeded and time-compressed,
+measure the divergence.
+
+### Defence & disaster resilience
 
 Civil-protection scenarios — floods, evacuations, infrastructure failure, mass events —
-simulated on the real world's geometry with populations of embodied agents. The stack is
-unusually honest about how people actually behave in a crisis, because its constraints are
-the point rather than patches:
+and exercise-driven defence training, simulated on the real world's geometry with
+populations of embodied agents. The stack is unusually honest about how people actually
+behave in a crisis, because its constraints are the point rather than patches:
 
 - Agents are **position-blind and perceive locally** — no god's-eye view, exactly like a
   person in smoke, floodwater, or an unfamiliar neighbourhood.
@@ -92,9 +112,14 @@ the point rather than patches:
   precise quantity emergency planning worries about, for the simulated responders and for
   the plan itself.
 
-Operationally this is the enterprise tier of the [business model](03-business-model.md):
-scenario rehearsal and communication-strategy testing for civil-protection agencies,
-municipalities, insurers and resilience planners, on their own geography.
+The engine's exercise machinery maps onto practice directly: **per-principal views** give
+each side or agency its own honestly-lagging picture of the shared ground truth (fog of
+war, or a Common Operating Picture); **injects are changesets** under the exercise's own
+authority; **forks are courses of action**, run seeded and time-compressed for measured
+comparison; and because the world is bitemporal, the after-action review — who believed
+what, when, on whose authority — is a query, not an archaeology project. Commercial shape
+and the dual-use guardrails we hold ourselves to are in
+[03](03-business-model.md).
 
 ### Analysis of the absence — the academic branch
 

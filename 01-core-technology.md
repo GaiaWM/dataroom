@@ -22,7 +22,7 @@ flowchart TB
         CORE["core orchestrator\nperceive → decide → vet → act"]
     end
     subgraph ENG["GaiaWM world-state engine (commercial core)"]
-        GAIA["gaia: world context · temporal state ·\naffordance inspector · influence/ripple engine ·\nnarration & rendering"]
+        GAIA["gaia: world context · versioned world state ·\nrules engine & scheduler · forks & injects ·\naffordance inspector · influence/ripple engine ·\nopen-data ingestion · narration & rendering"]
     end
     subgraph FAB["Real-time fabric (open infrastructure)"]
         GEO["geomqtt (Rust)\nRedis-RESP + MQTT tile fanout"]
@@ -44,6 +44,24 @@ The commercial core: a service that holds *what is true in a world* and answers 
   repo shows the surface, the reasoning internals stay ours.
 - **Influence / ripple engine** — propagates the consequences of events through world state
   as composable scenarios.
+- **Versioned world state** — every change to the world lands as a **changeset** carrying
+  its author, its authority (a game rule, an agent, an exercise inject, a data source),
+  and both world-time and wall-time; the world is bitemporal, any past state is a query
+  (`as-of` reads), and provenance — who asserted what, when — is structural rather than
+  logged. This is the substrate the non-game verticals stand on.
+- **Rules engine** — world dynamics are written in a small declarative rules language
+  (from our SMARTGREENS 2025 digital-twin paper — the paper's own listings run as the
+  engine's conformance tests) and executed by a scheduler on a shared simulation clock.
+  Rules are data, not code: the corpus a world runs on is inspectable, versionable, and
+  swappable per deployment.
+- **Forks, injects, seeded runs** — any world forks copy-on-write; injects apply under
+  their own authority; forked timelines run forward seeded and time-compressed and are
+  compared against baseline by the calibration surface. One mechanism serves game
+  scenario tests, urban counterfactuals, and exercise courses of action.
+- **Open-data ingestion** — collected real-world series enter as observed metrics with
+  the data source as the asserting authority. The running pilot ingests Bologna's
+  municipal traffic-sensor open data and scores the simulation against it per rule
+  (§3).
 - **Narration and rendering** — any viewport can be narrated as prose
   ([geobard](https://github.com/openfantasymap/geobard), extracted as a standalone OSS
   project) or turned into an image-generation prompt, via any OpenAI-compatible model.
@@ -97,6 +115,13 @@ calibration records across heuristic and LLM-driven agents. No comparable commer
 measures its agents this way; for a studio, this is the difference between "the NPC seemed
 fine in the demo" and a regression suite for behaviour.
 
+The same surface also scores *worlds*, not just agents: **calibration error by rule**
+compares each simulation rule's output against ingested real-world observations. Run
+against Bologna's traffic sensors, the first report located the behavioural model's
+divergence precisely ("the model has no morning rush") — the mechanism that makes the
+urban-twin and exercise verticals ([03](03-business-model.md)) falsifiable rather than
+decorative.
+
 ## 4. The real-time fabric
 
 - **[geomqtt](https://github.com/openfantasymap/geomqtt)** — a Rust Redis-RESP proxy with an
@@ -140,4 +165,4 @@ Shipped in Q3 2026, this is the distribution thesis turned into product:
 | BYOK ownership works end-to-end | [ghostkit](https://github.com/GaiaWM/ghostkit) · [GhostDeck](https://github.com/GaiaWM/ghostdeck) |
 | The OSS floor is broad and maintained | [openfantasymap org](https://github.com/openfantasymap): geobard, inspector, georender, ticker, ofm-shared-world, ofm-map-canvas, Unity/Unreal bridges |
 | The engine serves a live world | [fantasymaps.org](https://fantasymaps.org) tile infrastructure; a persistent Toril simulation with LLM-driven populations runs on it continuously |
-| Quality posture | 98-test suite (82 unit + 16 integration), 11 container images built from one script, dual-mode (shared/per-agent) deployment from the same code |
+| Quality posture | 169-test suite (153 unit + 16 integration, including rules-language conformance on the published paper's listings), 11 container images built from one script, dual-mode (shared/per-agent) deployment from the same code |
