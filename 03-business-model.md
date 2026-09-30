@@ -241,4 +241,5 @@ Sequencing is portfolio logic, not a pivot: games funds and proves the engine at
 population scale; urban twins is grant-fundable *now* on running evidence; defence enters
 through disaster at its own procurement pace. One engine roadmap underneath all three —
 and per [02](02-rd-runway.md), a vertical pulls its Horizon-3 items forward the moment a
-partner or grant lands.
+partner or grant lands. The year-by-year version — targets, hires, funding, and the kill
+criteria for each motion — is the [business plan](05-business-plan.md).

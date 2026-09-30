@@ -19,6 +19,7 @@ world — its laws, its affordances, its history, its consequences — is the on
 | [02 · R&D runway](02-rd-runway.md) | What we build over the next 1–2 years (Q4 2026 → 2028), in three horizons, with the shipping cadence that makes the dates credible. |
 | [03 · Business model](03-business-model.md) | One engine, three markets — games, urban digital twins, defence & disaster resilience: who pays in each, the commercial shapes, the dual-use guardrails, and why the open-source layer strengthens rather than cannibalises the paid one. |
 | [04 · Mission & context](04-mission.md) | Why we are doing this, where we come from, the research behind it, and everything you can verify today. |
+| [05 · Business plan](05-business-plan.md) | The three years Q4 2026 → 2029: targets by market, hiring, funding — and the gates, stated in advance, where the plan changes course. |
 
 This room is the diligence companion to the **[pitch deck](https://gaiawm.github.io/pitch-deck/)**
 ([source](https://github.com/GaiaWM/pitch-deck)): the deck is the story, this room is the

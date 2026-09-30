@@ -4,7 +4,9 @@
 
 Three horizons. Each workstream has a definition of done; nothing here is aspiration without
 a shipping shape. Dates are calendar quarters and mark *intent under current resourcing* —
-design-partner work always outranks the roadmap when they conflict.
+design-partner work always outranks the roadmap when they conflict. This is the *product*
+plan; the company-level timeline — revenue targets, hiring, funding, and the gates where
+course changes — is the [business plan](05-business-plan.md).
 
 ## Why the dates are credible: recent shipping cadence
 
